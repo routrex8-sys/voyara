@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Voyara encontra viagens que combinam com você." />
+    <title>Voyara — Viaje do seu jeito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Voyara início"><span class="brand-mark">✦</span>voyara</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="active" href="#descobrir">Descobrir</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+      <button class="profile-button" type="button" id="open-profile"><span class="avatar">L</span> Meu perfil <span class="chevron">⌄</span></button>
+    </header>
+
+    <main>
+      <section class="hero" id="descobrir">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="sparkle">✦</span> sua próxima história começa aqui</p>
+          <h1>Viaje para onde<br /><em>combina com você.</em></h1>
+          <p class="hero-text">A Voyara entende seu momento, seu estilo e seu bolso para montar uma viagem que tem a sua cara.</p>
+          <button class="primary-button" type="button" id="hero-profile">Contar um pouco sobre mim <span>→</span></button>
+          <div class="trust-row"><div class="mini-avatars"><span>AS</span><span>MR</span><span>JP</span><span>+</span></div><span>+12 mil viajantes já encontraram seu destino</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Imagem de uma praia paradisíaca">
+          <div class="hero-image"></div>
+          <div class="floating-card"><span class="sun-icon">☼</span><div><strong>Seu destino ideal</strong><small>Jericoacoara, CE</small></div><span class="match">98% <small>match</small></span></div>
+          <span class="decor-star star-one">✦</span><span class="decor-star star-two">✦</span>
+        </div>
+      </section>
+
+      <section class="section destinations-section" id="destinos">
+        <div class="section-heading"><div><p class="eyebrow">inspire-se</p><h2>Destinos em alta</h2></div><button class="text-button" type="button" id="show-all">Ver todos <span>→</span></button></div>
+        <div class="destination-grid">
+          <article class="destination-card featured" data-destination="Jericoacoara" data-base="2150" data-stay="980" data-tours="420">
+            <div class="destination-image jericoacoara"><span class="tag">Mais buscado</span><button class="heart" type="button" aria-label="Favoritar Jericoacoara">♡</button></div>
+            <div class="card-content"><div class="card-title"><h3>Jericoacoara</h3><span>BR</span></div><p>Ceará, Brasil · 5 dias</p><div class="card-bottom"><strong>A partir de <b>R$ 3.550</b></strong><button class="small-arrow select-destination" type="button" aria-label="Selecionar Jericoacoara">→</button></div></div>
+          </article>
+          <article class="destination-card" data-destination="Cartagena" data-base="2980" data-stay="1320" data-tours="610">
+            <div class="destination-image cartagena"><button class="heart" type="button" aria-label="Favoritar Cartagena">♡</button></div>
+            <div class="card-content"><div class="card-title"><h3>Cartagena</h3><span>CO</span></div><p>Colômbia · 6 dias</p><div class="card-bottom"><strong>A partir de <b>R$ 4.910</b></strong><button class="small-arrow select-destination" type="button" aria-label="Selecionar Cartagena">→</button></div></div>
+          </article>
+          <article class="destination-card" data-destination="Lençóis Maranhenses" data-base="1690" data-stay="740" data-tours="350">
+            <div class="destination-image lencois"><button class="heart" type="button" aria-label="Favoritar Lençóis Maranhenses">♡</button></div>
+            <div class="card-content"><div class="card-title"><h3>Lençóis Maranhenses</h3><span>BR</span></div><p>Maranhão, Brasil · 4 dias</p><div class="card-bottom"><strong>A partir de <b>R$ 2.780</b></strong><button class="small-arrow select-destination" type="button" aria-label="Selecionar Lençóis Maranhenses">→</button></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section recommendation" id="como-funciona">
+        <div class="ai-badge">✦</div>
+        <div><p class="eyebrow">feito para você</p><h2>Uma curadoria que<br /><em>pensa como você.</em></h2><p>Conte o que importa para sua viagem. Nossa inteligência cruza milhares de opções e encontra experiências que fazem sentido para o seu perfil — sem perder tempo e sem estourar o orçamento.</p><button class="secondary-button" type="button" id="recommendation-button">Criar minha recomendação <span>→</span></button></div>
+        <div class="stats"><div><strong>94%</strong><span>dos viajantes<br />aprovam o match</span></div><div><strong>3x</strong><span>mais economia<br />em cada roteiro</span></div></div>
+      </section>
+
+      <section class="builder section" id="montar">
+        <div class="builder-header"><div><p class="eyebrow">monte sua viagem</p><h2>Do sonho ao <em>embarque.</em></h2></div><div class="stepper"><span class="current">1</span><i></i><span>2</span><i></i><span>3</span></div></div>
+        <div class="builder-layout">
+          <div class="builder-options">
+            <label>Escolha seu destino <select id="destination-select"><option value="Jericoacoara">Jericoacoara, CE</option><option value="Cartagena">Cartagena, Colômbia</option><option value="Lençóis Maranhenses">Lençóis Maranhenses, MA</option></select></label>
+            <div class="option-group"><span>O que você quer incluir?</span><label class="check-row"><input type="checkbox" checked data-price="2150" id="flight" /><span class="fake-check">✓</span><span><b>Passagens aéreas</b><small>Ida e volta · econômica</small></span><strong id="flight-price">R$ 2.150</strong></label><label class="check-row"><input type="checkbox" checked data-price="980" id="stay" /><span class="fake-check">✓</span><span><b>Hospedagem</b><small>4 noites · hotel 3 estrelas</small></span><strong id="stay-price">R$ 980</strong></label><label class="check-row"><input type="checkbox" checked data-price="420" id="tours" /><span class="fake-check">✓</span><span><b>Passeios e experiências</b><small>3 experiências selecionadas</small></span><strong id="tours-price">R$ 420</strong></label></div>
+            <div class="traveler-row"><label>Viajantes <div class="counter"><button type="button" id="minus">−</button><b id="traveler-count">2</b><button type="button" id="plus">+</button></div></label><label>Datas <button type="button" class="date-button">12 jun — 17 jun <span>⌄</span></button></label></div>
+          </div>
+          <aside class="price-card"><span class="price-label">estimativa para 2 pessoas</span><div class="total" id="total-price">R$ 3.550</div><span class="installments">ou 10x de <b id="installment-price">R$ 355</b> sem juros</span><div class="included"><span>✓</span> Voo + hospedagem + passeios</div><button class="primary-button full" type="button" id="continue-button">Continuar para personalizar <span>→</span></button><small>Você só paga quando decidir embarcar.</small></aside>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="profile-modal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="close-modal" type="button" id="close-profile">×</button><p class="eyebrow">vamos começar</p><h2 id="modal-title">Conte um pouco<br /><em>sobre você.</em></h2><p class="modal-intro">Essas informações ficam salvas no seu perfil para deixar cada sugestão mais certeira.</p><form id="profile-form"><label>Como podemos te chamar?<input name="name" placeholder="Seu nome" required /></label><div class="form-row"><label>Faixa etária<select name="age"><option>18 a 24 anos</option><option>25 a 34 anos</option><option>35 a 49 anos</option><option>50+ anos</option></select></label><label>Como você viaja?<select name="status"><option>Sozinho(a)</option><option>A dois</option><option>Com a família</option><option>Com amigos</option></select></label></div><label>Qual é o seu estilo de viagem?<div class="pills"><label><input type="radio" name="style" value="descanso" checked /><span>Descanso</span></label><label><input type="radio" name="style" value="aventura" /><span>Aventura</span></label><label><input type="radio" name="style" value="cultura" /><span>Cultura</span></label><label><input type="radio" name="style" value="gastronomia" /><span>Gastronomia</span></label></div></label><label>Orçamento estimado por pessoa<select name="budget"><option>Até R$ 2.000</option><option>R$ 2.000 a R$ 4.000</option><option>R$ 4.000 a R$ 7.000</option><option>Acima de R$ 7.000</option></select></label><button class="primary-button full" type="submit">Encontrar meu destino <span>→</span></button></form></div></div>
+    <div class="toast" id="toast" role="status">Perfil salvo! Sua curadoria está pronta ✦</div>
+    <footer><a class="brand" href="#"><span class="brand-mark">✦</span>voyara</a><span>Feito para quem acredita que viajar é se encontrar.</span><span>© 2024 Voyara</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
